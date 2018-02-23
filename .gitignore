@@ -41,6 +41,9 @@ local.properties
 *.user
 *.sln.docstates
 
+# Temporary files
+.vs/
+
 # Build results
 
 [Dd]ebug/
