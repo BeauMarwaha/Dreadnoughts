@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CommanderCameraController.cs" />
      <Compile Include="Assets\Scripts\VehicleMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
