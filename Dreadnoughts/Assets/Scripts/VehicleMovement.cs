@@ -24,7 +24,7 @@ public class VehicleMovement : MonoBehaviour
     {
         //set initial values
         ResetPosition();
-        maxSpeed = 10f;
+        maxSpeed = 5f;
     }
 
     // Update is called once per frame
