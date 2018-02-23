@@ -24,7 +24,7 @@ public class VehicleMovement : MonoBehaviour
     {
         //set initial values
         ResetPosition();
-        maxSpeed = 5f;
+        maxSpeed = 2.5f;
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class VehicleMovement : MonoBehaviour
             accelRate = 0;
 
             //slow down the vehicle
-            velocity = Vector3.ClampMagnitude(velocity, velocity.magnitude * .9f);
+            velocity = Vector3.ClampMagnitude(velocity, velocity.magnitude * .8f);
 
             //bring the car to a standstill after reaching a very small current speed
             if (velocity.magnitude <= .000001)
