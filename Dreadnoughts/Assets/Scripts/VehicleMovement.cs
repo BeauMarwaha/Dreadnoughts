@@ -13,9 +13,13 @@ public class VehicleMovement : MonoBehaviour
     private Vector3 vehiclePos;
     private Vector3 velocity;
     private Vector3 direction;
+    private Vector3 turretDirection;
     private Vector3 acceleration;
 
+    private Transform turretTransform;
+
     public float angleOfRotation;
+    public float turretAngle;
     public float maxSpeed;
     public float accelRate;
 
@@ -25,6 +29,7 @@ public class VehicleMovement : MonoBehaviour
         //set initial values
         ResetPosition();
         maxSpeed = 2.5f;
+        turretTransform = transform.GetChild(1);
     }
 
     // Update is called once per frame
@@ -32,6 +37,7 @@ public class VehicleMovement : MonoBehaviour
     {
         //move the vehicle around the screen
         Rotate();
+        RotateTurret();
         Drive();
         SetTransform();
     }
@@ -88,14 +94,38 @@ public class VehicleMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.J))
         {
             direction = Quaternion.Euler(0, -2, 0) * direction;
+            turretDirection = Quaternion.Euler(0, -2, 0) * turretDirection;
             angleOfRotation -= 2f;
+            turretAngle -= 2f;
         }
 
         //if L key is pressed rotate to the right 2 deg
         if (Input.GetKey(KeyCode.L))
         {
             direction = Quaternion.Euler(0, 2, 0) * direction;
+            turretDirection = Quaternion.Euler(0, 2, 0) * turretDirection;
             angleOfRotation += 2f;
+            turretAngle += 2f;
+        }
+    }
+
+    /// <summary>
+    /// Rotate this instance based on the direction its facing
+    /// </summary>
+    void RotateTurret()
+    {
+        //if A key is pressed rotate to the left 1 deg
+        if (Input.GetKey(KeyCode.A))
+        {
+            turretDirection = Quaternion.Euler(0, -1, 0) * turretDirection;
+            turretAngle -= 1f;
+        }
+
+        //if D key is pressed rotate to the right 1 deg
+        if (Input.GetKey(KeyCode.D))
+        {
+            turretDirection = Quaternion.Euler(0, 1, 0) * turretDirection;
+            turretAngle += 1f;
         }
     }
 
@@ -125,6 +155,7 @@ public class VehicleMovement : MonoBehaviour
         vehiclePos = new Vector3(0, 0.16f, 0); // Custom start position
         velocity = Vector3.zero;
         direction = Vector3.forward;
+        turretDirection = Vector3.forward;
         angleOfRotation = 0;
         accelRate = 0;
     }
@@ -139,5 +170,6 @@ public class VehicleMovement : MonoBehaviour
 
         //rotate the vehicle to its calculated rotation
         transform.rotation = Quaternion.Euler(0, angleOfRotation, 0);
+        turretTransform.rotation = Quaternion.Euler(0, turretAngle, 0);
     }
 }
