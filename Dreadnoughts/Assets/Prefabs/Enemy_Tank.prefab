@@ -160,11 +160,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4139360728052716}
-  - component: {fileID: 114759935425741468}
   - component: {fileID: 65240259347263936}
   m_Layer: 0
-  m_Name: Tank
-  m_TagString: Untagged
+  m_Name: Enemy_Tank
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -833,20 +832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   parentTransform: {fileID: 4139360728052716}
---- !u!114 &114759935425741468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1764568908955830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e4aa7bc25f1a6742922e29cf29f557d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angleOfRotation: 0
-  maxSpeed: 0
-  accelRate: 0
 --- !u!124 &124035439586538874
 Behaviour:
   m_ObjectHideFlags: 1
