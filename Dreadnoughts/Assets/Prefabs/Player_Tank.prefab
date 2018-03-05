@@ -148,7 +148,11 @@ GameObject:
   - component: {fileID: 114333494240173124}
   m_Layer: 0
   m_Name: Player_Tank
+<<<<<<< HEAD
   m_TagString: Untagged
+=======
+  m_TagString: Player
+>>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -835,7 +839,11 @@ MonoBehaviour:
   prefabBullet: {fileID: 1691846905847228, guid: 35d732250ff4e664099c287043cec910,
     type: 2}
   tank: {fileID: 4413498073399282}
+<<<<<<< HEAD
   turrent: {fileID: 4207662830539166}
+=======
+  turret: {fileID: 4207662830539166}
+>>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
   bulletContainer: {fileID: 0}
 --- !u!114 &114700014692264038
 MonoBehaviour:
