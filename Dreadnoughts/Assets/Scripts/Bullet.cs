@@ -32,9 +32,5 @@ public class Bullet : MonoBehaviour {
             Destroy(col.gameObject);
             Destroy (this.gameObject);
 		}
-<<<<<<< HEAD
-	}
-=======
     }
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
 }

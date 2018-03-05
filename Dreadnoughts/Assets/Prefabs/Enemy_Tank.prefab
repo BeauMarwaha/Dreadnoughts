@@ -122,10 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4139360728052716}
   - component: {fileID: 65240259347263936}
-<<<<<<< HEAD
-=======
   - component: {fileID: 114418961504498168}
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
   m_Layer: 0
   m_Name: Enemy_Tank
   m_TagString: Enemy
@@ -576,8 +573,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!114 &114418961504498168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -591,7 +586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemyBullet: {fileID: 1414522864600624, guid: 6816f11366f83274bb3e56217c4858e5,
     type: 2}
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
 --- !u!135 &135860688690390984
 SphereCollider:
   m_ObjectHideFlags: 1

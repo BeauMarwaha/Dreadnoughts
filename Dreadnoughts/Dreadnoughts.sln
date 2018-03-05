@@ -1,13 +1,7 @@
 ﻿
-<<<<<<< HEAD
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dreadnoughts", "Dreadnoughts.csproj", "{9434B060-7BDF-A02C-7FE9-D9B519E5953A}"
-=======
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dreadnoughts", "Assembly-CSharp.csproj", "{5B65E427-56B8-4723-F2BC-E16397714C9F}"
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,25 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
-		{9434B060-7BDF-A02C-7FE9-D9B519E5953A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9434B060-7BDF-A02C-7FE9-D9B519E5953A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9434B060-7BDF-A02C-7FE9-D9B519E5953A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9434B060-7BDF-A02C-7FE9-D9B519E5953A}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
 		{5B65E427-56B8-4723-F2BC-E16397714C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B65E427-56B8-4723-F2BC-E16397714C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B65E427-56B8-4723-F2BC-E16397714C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B65E427-56B8-4723-F2BC-E16397714C9F}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-=======
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
->>>>>>> 02224defc49b1d06794a40032950f109b76f9ae5
 EndGlobal
