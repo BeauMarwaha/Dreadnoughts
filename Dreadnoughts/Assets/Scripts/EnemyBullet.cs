@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class EnemyBullet : MonoBehaviour {
 
-	private Vector3 nVector;
+    private Vector3 nVector;
     private float bulletSpeed = 5.0f;
 
     // Use this for initialization
@@ -20,17 +20,17 @@ public class Bullet : MonoBehaviour {
     }
 
     void DestroyObjectDelayed()
-	{
-		Destroy (this.gameObject, 5);
-	}
+    {
+        Destroy(this.gameObject, 5);
+    }
 
-	void OnCollisionEnter(Collision col)
-	{
-        // On collision destory the enemy and the bullet
-		if (col.gameObject.tag == "Enemy")
-		{
-            Destroy(col.gameObject);
-            Destroy (this.gameObject);
-		}
+    void OnCollisionEnter(Collision col)
+    {
+        // On collision damage the player and destroy the bullet
+        if (col.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+            //col.gameObject.health -= 5; // Reduce the player health here
+        }
     }
 }

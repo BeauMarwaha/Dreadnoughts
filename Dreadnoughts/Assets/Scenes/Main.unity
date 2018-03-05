@@ -1124,6 +1124,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1000525133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1000525134}
+  m_Layer: 0
+  m_Name: EnemyBulletContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000525134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000525133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1013056933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1720,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e60ddd1c6cf144040853443b75d2f0d6, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1730010390 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4207662830539166, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2054893173}
 --- !u!1001 &1806682391
 Prefab:
   m_ObjectHideFlags: 0
@@ -1702,12 +1735,12 @@ Prefab:
     - target: {fileID: 224739241368925870, guid: 0c608e7cf45e1ee40b2e212ff3536e9f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 556.5
+      value: 449
       objectReference: {fileID: 0}
     - target: {fileID: 224739241368925870, guid: 0c608e7cf45e1ee40b2e212ff3536e9f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 316.5
+      value: 252.5
       objectReference: {fileID: 0}
     - target: {fileID: 224739241368925870, guid: 0c608e7cf45e1ee40b2e212ff3536e9f,
         type: 2}
@@ -1958,6 +1991,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4609342797740310, guid: e60ddd1c6cf144040853443b75d2f0d6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609342797740310, guid: e60ddd1c6cf144040853443b75d2f0d6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609342797740310, guid: e60ddd1c6cf144040853443b75d2f0d6, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e60ddd1c6cf144040853443b75d2f0d6, type: 2}
   m_IsPrefabParent: 0
@@ -2179,7 +2224,7 @@ Prefab:
     - target: {fileID: 65550759439466532, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 20259584896138052, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
         type: 2}
@@ -2221,6 +2266,25 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1641655823197686, guid: 52f19a6cf82ab024fae8a42b32fbe6c8, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 65550759439466532, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65550759439466532, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114333494240173124, guid: 52f19a6cf82ab024fae8a42b32fbe6c8,
+        type: 2}
+      propertyPath: turret
+      value: 
+      objectReference: {fileID: 1730010390}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52f19a6cf82ab024fae8a42b32fbe6c8, type: 2}
   m_IsPrefabParent: 0
