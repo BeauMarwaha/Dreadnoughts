@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 4139360728052716}
   - component: {fileID: 65240259347263936}
   - component: {fileID: 114418961504498168}
-  - component: {fileID: 114429457172445320}
   m_Layer: 0
   m_Name: Enemy_Tank
   m_TagString: Enemy
@@ -587,35 +586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemyBullet: {fileID: 1414522864600624, guid: 6816f11366f83274bb3e56217c4858e5,
     type: 2}
---- !u!114 &114429457172445320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1764568908955830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d2b01f9165d804ea949105a0153cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vehiclePosition: {x: 0, y: 0, z: 0}
-  velocity: {x: 0, y: 0, z: 0}
-  direction: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
-  accelRate: 0
-  maxSpeed: 0
-  anglePerFrame: 0
-  totalRotation: 0
-  DecisionTimer: 0
-  Decision: 0
-  DecisionMade: 0
-  goingLeft: 0
-  goingRight: 0
-  goingForward: 0
-  Waiting: 0
-  Health: 0
-  minBound: {x: 0, y: 0, z: 0}
-  maxBound: {x: 0, y: 0, z: 0}
 --- !u!135 &135860688690390984
 SphereCollider:
   m_ObjectHideFlags: 1
