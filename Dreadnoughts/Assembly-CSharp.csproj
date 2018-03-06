@@ -54,13 +54,9 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CommanderCameraController.cs" />
      <Compile Include="Assets\Scripts\EnemyBullet.cs" />
-     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\EnemyShootingHandler.cs" />
      <Compile Include="Assets\Scripts\NumberHeader.cs" />
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\Quit_BTN.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\StartGame_BTN.cs" />
      <Compile Include="Assets\Scripts\VehicleMovement.cs" />
      <Compile Include="Assets\Scripts\WinHandler.cs" />
      <Compile Include="Assets\Scripts_old\AsteroidLargeInfo.cs" />
@@ -80,9 +76,8 @@
      <Compile Include="Assets\Scripts_old\ShipMovement.cs" />
      <Compile Include="Assets\Scripts_old\ShipShooting.cs" />
      <Compile Include="Assets\Scripts_old\SimpleMovement.cs" />
-     <None Include="Assets\Sounds\SoundCredits.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/krita/Desktop/GDD2/updated/Dreadnoughts/Dreadnoughts/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/krita/Desktop/GDD2/MyFile/Dreadnoughts-5aaa7e875d3029f0c4e50da148df74b577553585/Dreadnoughts/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
