@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour {
         if (ishurt == true)
         {
             Debug.Log("Ouch");
+            //Don't want all the code here since it only needs to run every once and awhile
+            //Mostly here for debugging.
         }
         else
         {
@@ -31,9 +33,11 @@ public class PlayerHealth : MonoBehaviour {
         
     }
 
-    void TakeDamage(int damageTaken)
+    void TakeDamage(int damageTaken) //This is to be called from outside this script
     {
         ishurt = true;
+        //Death flag to make sure it only runs once
+
         currentHealth -= damageTaken;
 
         if (currentHealth <= 0 && isalive == true)
@@ -45,7 +49,6 @@ public class PlayerHealth : MonoBehaviour {
     void KillPlayer()
     {
         isalive = false;
-        SceneManager.LoadScene(2);
-        //The number refers to the scene in the build index which can change if we add more levels. Hard coding it for now to make it simple, can/should change later
+        SceneManager.LoadScene("GameOver");
     }
 }

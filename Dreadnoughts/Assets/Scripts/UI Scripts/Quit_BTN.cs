@@ -8,7 +8,6 @@ public class Quit_BTN : MonoBehaviour {
     public void QuittheGame()
     {
         Application.Quit();
-        print("GameQuit");
         Debug.Log("You have clicked the button!");
     }
 	
