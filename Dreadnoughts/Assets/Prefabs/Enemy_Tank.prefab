@@ -122,7 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4139360728052716}
   - component: {fileID: 65240259347263936}
-  - component: {fileID: 114418961504498168}
+  - component: {fileID: 114942218007086434}
+  - component: {fileID: 114585245820257460}
   m_Layer: 0
   m_Name: Enemy_Tank
   m_TagString: Enemy
@@ -573,7 +574,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114418961504498168
+--- !u!114 &114585245820257460
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -581,10 +582,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764568908955830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61f7d52e7f2604d882c64fde77f5e2, type: 3}
+  m_Script: {fileID: 11500000, guid: f5ee068db0b1bbe42b9316f38279801a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabEnemyBullet: {fileID: 1414522864600624, guid: 6816f11366f83274bb3e56217c4858e5,
+  vehiclePosition: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  accelRate: 0
+  maxSpeed: 0
+  anglePerFrame: 0
+  totalRotation: 0
+  DecisionTimer: 0
+  Decision: 0
+  DecisionMade: 0
+  goingLeft: 0
+  goingRight: 0
+  goingForward: 0
+  Waiting: 0
+  Health: 0
+  minBound: {x: 0, y: 0, z: 0}
+  maxBound: {x: 0, y: 0, z: 0}
+--- !u!114 &114942218007086434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764568908955830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec9b739df8a03641a3e7c8faa4f0f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabEnemyBullet: {fileID: 1335140181414692, guid: bb35035f7faca2a4cbeebea1a2e102a4,
     type: 2}
 --- !u!135 &135860688690390984
 SphereCollider:
