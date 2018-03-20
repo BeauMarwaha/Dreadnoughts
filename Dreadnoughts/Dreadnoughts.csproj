@@ -227,6 +227,7 @@
     <Compile Include="Assets\Scripts\NumberHeader.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\MainMenu_BTN.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Quit_BTN.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\StartGame_BTN.cs" />
     <Compile Include="Assets\Scripts\VehicleMovement.cs" />

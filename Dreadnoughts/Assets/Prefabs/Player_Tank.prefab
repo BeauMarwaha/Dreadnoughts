@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 114826808275717552}
   - component: {fileID: 65550759439466532}
   - component: {fileID: 114333494240173124}
+  - component: {fileID: 114537247299287090}
   m_Layer: 0
   m_Name: Player_Tank
   m_TagString: Player
@@ -404,9 +405,9 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.7
+    x: 0
     y: 0
-    width: 0.3
+    width: 0.4
     height: 0.3
   near clip plane: 0.3
   far clip plane: 1000
@@ -440,9 +441,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.1
     width: 1
-    height: 1
+    height: 0.9
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -474,9 +475,9 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.6
     y: 0
-    width: 0.3
+    width: 0.4
     height: 0.3
   near clip plane: 0.3
   far clip plane: 1000
@@ -837,6 +838,20 @@ MonoBehaviour:
   tank: {fileID: 4413498073399282}
   turret: {fileID: 4207662830539166}
   bulletContainer: {fileID: 0}
+--- !u!114 &114537247299287090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641655823197686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9cf4aaa82229f468134363383a844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  PlayerHealthText: {fileID: 0}
 --- !u!114 &114700014692264038
 MonoBehaviour:
   m_ObjectHideFlags: 1

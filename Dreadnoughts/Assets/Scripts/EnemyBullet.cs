@@ -6,6 +6,7 @@ public class EnemyBullet : MonoBehaviour {
 
     private Vector3 nVector;
     private float bulletSpeed = 5.0f;
+    private int bulletDamage = 10; // 10 health per hit
 
     // Use this for initialization
     void Start()
@@ -30,6 +31,7 @@ public class EnemyBullet : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(bulletDamage);
             //col.gameObject.health -= 5; // Reduce the player health here
         }
     }
