@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 	private Vector3 nVector;
-    private float bulletSpeed = 5.0f;
+    private float bulletSpeed = 20.0f;
 
     // Use this for initialization
     void Start()

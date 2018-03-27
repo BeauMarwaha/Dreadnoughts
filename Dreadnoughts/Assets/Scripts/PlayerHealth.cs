@@ -10,6 +10,10 @@ public class PlayerHealth : MonoBehaviour {
     public int currentHealth;
     public Text PlayerHealthText;
 
+    // audio things -- SB
+    public AudioClip fireSound; // The sound to be played
+    AudioSource audioSource; // The audiosource of the object
+
     bool ishurt;
     bool isalive;
 
@@ -17,7 +21,9 @@ public class PlayerHealth : MonoBehaviour {
 	void Start () {
         currentHealth = startingHealth;
         isalive = true;
-	}
+        // set variable for audioSource
+        audioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,6 +43,8 @@ public class PlayerHealth : MonoBehaviour {
 
     public void TakeDamage(int damageTaken) //This is to be called from outside this script
     {
+        audioSource.PlayOneShot(fireSound, 1.8f); // play hurt sound
+
         ishurt = true;
 
         currentHealth -= damageTaken;

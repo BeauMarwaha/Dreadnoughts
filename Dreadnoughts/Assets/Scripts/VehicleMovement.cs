@@ -101,13 +101,13 @@ public class VehicleMovement : MonoBehaviour
         //if J key is pressed rotate to the left
         if (Input.GetKey(KeyCode.J))
         {
-            tempRotAccelRate -= 5f;
+            tempRotAccelRate -= 2.5f;
         }
 
         //if L key is pressed rotate to the right
         if (Input.GetKey(KeyCode.L))
         {
-            tempRotAccelRate += 5f;
+            tempRotAccelRate += 2.5f;
         }
 
         //provide natural friction and soft-cap on rotational velocity
@@ -202,11 +202,11 @@ public class VehicleMovement : MonoBehaviour
     /// </summary>
     public void ResetPosition()
     {
-        vehiclePosition = new Vector3(0, 0.16f, 0); // Custom start position
+        vehiclePosition = new Vector3(0, 0, 0); // Custom start position -- MODIFIED
         vehicleLinearVelocity = Vector3.zero;
         vehicleDirection = Vector3.forward;
         turretDirection = Vector3.forward;
-        angleOfRotation = 0;
+        angleOfRotation = -3.197f;
     }
 
     /// <summary>

@@ -16,11 +16,19 @@ public class EnemyShootingHandler : MonoBehaviour {
 
     public GameObject prefabEnemyBullet; // Enemy Bullet Prefab
 
+    // FOR AUDIO -- Stuart Burton
+    public AudioClip fireSound; // The sound to be played
+    AudioSource audioSource; // The audiosource of the object
+
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("Tank").transform;
+        // UPDATED WITH NEW PLAYER TANK
+        player = GameObject.Find("Dreadnought").transform;
         turret = GetComponentsInChildren<Transform>().First(x => x.name == "Turret");
         enemyBulletContainer = GameObject.Find("EnemyBulletContainer").transform;
+
+        // set variable for audioSource -- SB
+        audioSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -48,6 +56,8 @@ public class EnemyShootingHandler : MonoBehaviour {
         // If the turret is lined up on the player and the shot is off cooldown
         if(Mathf.Abs(Quaternion.Dot(targetRotation, turret.rotation)) > shootRange && cooldownTimeStamp <= Time.time)
         {
+            audioSource.PlayOneShot(fireSound, 1.6f); // Play firing sound -- SB
+
             // Shoot a bullet at the player
             Vector3 intialPosition = transform.position + new Vector3(0f, 0.273f, 0f) + turret.right * 0.99f; //REMOVE ME WHEN MODEL GETS FIXED
             Quaternion intialRotation = turret.rotation * Quaternion.Euler(0, 90, 0); //REMOVE ME WHEN MODEL GETS FIXED

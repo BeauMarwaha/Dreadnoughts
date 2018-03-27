@@ -10,6 +10,7 @@ public class NumberHeader : MonoBehaviour {
 	public float start = 526.0f;
 	// Use this for initialization
 	void Start () {
+        turret = GameObject.Find("Dreadnought");
 		for(int x = 360 ; x < 365; x++){
 
 			mText.text += x%366 + " | ";
