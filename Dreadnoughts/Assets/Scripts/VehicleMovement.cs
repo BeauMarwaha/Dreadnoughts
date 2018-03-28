@@ -11,7 +11,7 @@ public class VehicleMovement : MonoBehaviour
 
     //attributes
     private Vector3 vehiclePosition;
-    private Vector3 vehicleLinearVelocity;
+    private float vehicleLinearSpeed;
     private Vector3 vehicleLinearAcceleration;
 
     private Vector3 vehicleDirection;
@@ -72,23 +72,22 @@ public class VehicleMovement : MonoBehaviour
         }
 
         //decelerate the vehicle, providing natural soft-cap on speed
-        tempAccelRate += vehicleLinearVelocity.magnitude * -1.5f;
+        tempAccelRate += vehicleLinearSpeed * -1.5f;
 
-        //accelRate * direction = accel vector
-        vehicleLinearAcceleration = tempAccelRate * vehicleDirection.normalized * Time.deltaTime;
         //add accel to vel
-        vehicleLinearVelocity += vehicleLinearAcceleration;
+        vehicleLinearSpeed += tempAccelRate * Time.deltaTime;
+        
         //limit vel
-        vehicleLinearVelocity = Vector3.Project(Vector3.ClampMagnitude(vehicleLinearVelocity, maxVehicleLinearSpeed), vehicleDirection.normalized);
-
+        vehicleLinearSpeed = Mathf.Max(Mathf.Min(vehicleLinearSpeed, maxVehicleLinearSpeed), -maxVehicleLinearSpeed);
+        
         //bring the car to a standstill after reaching a very small current speed
-        if (vehicleLinearVelocity.magnitude <= 0.01f)
+        if (vehicleLinearSpeed <= 0.01f && vehicleLinearSpeed >= -0.01f)
         {
-            vehicleLinearVelocity = Vector3.zero;
+            vehicleLinearSpeed = 0f;
         }
 
         //add velocity to position
-        vehiclePosition += vehicleLinearVelocity * Time.deltaTime;
+        vehiclePosition += vehicleLinearSpeed * vehicleDirection.normalized * Time.deltaTime;
     }
 
     /// <summary>
@@ -142,17 +141,24 @@ public class VehicleMovement : MonoBehaviour
     void RotateTurret()
     {
         float tempRotAccelRate = 0;
+        float rotRate = 2f;
 
-        //if J key is pressed rotate to the left
-        if (Input.GetKey(KeyCode.A))
+        //if Shift key is pressed rotate faster
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            tempRotAccelRate -= 10f;
+            rotRate = 5f;
         }
 
-        //if L key is pressed rotate to the right
+        //if A key is pressed rotate to the left
+        if (Input.GetKey(KeyCode.A))
+        {
+            tempRotAccelRate -= rotRate;
+        }
+
+        //if D key is pressed rotate to the right
         if (Input.GetKey(KeyCode.D))
         {
-            tempRotAccelRate += 10f;
+            tempRotAccelRate += rotRate;
         }
 
         //provide natural friction and soft-cap on rotational velocity
@@ -203,7 +209,7 @@ public class VehicleMovement : MonoBehaviour
     public void ResetPosition()
     {
         vehiclePosition = new Vector3(0, 0, 0); // Custom start position -- MODIFIED
-        vehicleLinearVelocity = Vector3.zero;
+        vehicleLinearSpeed = 0f;
         vehicleDirection = Vector3.forward;
         turretDirection = Vector3.forward;
         angleOfRotation = -3.197f;
