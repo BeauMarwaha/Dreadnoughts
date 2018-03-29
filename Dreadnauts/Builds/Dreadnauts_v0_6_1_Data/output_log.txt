@@ -1,0 +1,62 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
+    Vendor:   NVIDIA
+    VRAM:     3039 MB
+    Driver:   23.21.13.8859
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Profiles\sab6735\Downloads\Dreadnauts-master\Dreadnauts-master\Dreadnauts\Builds\Dreadnauts_v0_6_1_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 60Hz; virtual: 3600x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.873527 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1348 -> priority: 1 
+  Thread -> id: 1dc -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.910074 ms
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 330.
+Total: 2.023251 ms (FindLiveObjects: 0.016213 ms CreateObjectMapping: 0.013653 ms MarkObjects: 0.141368 ms  DeleteObjects: 1.851446 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.117296 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 527.
+Total: 0.368924 ms (FindLiveObjects: 0.031288 ms CreateObjectMapping: 0.014506 ms MarkObjects: 0.161279 ms  DeleteObjects: 0.161279 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.991856 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1035.
+Total: 3.339089 ms (FindLiveObjects: 0.055751 ms CreateObjectMapping: 0.029866 ms MarkObjects: 0.236657 ms  DeleteObjects: 3.016529 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.556193 ms
+
+Unloading 99 unused Assets to reduce memory usage. Loaded Objects now: 300.
+Total: 3.171551 ms (FindLiveObjects: 0.021617 ms CreateObjectMapping: 0.019626 ms MarkObjects: 0.142222 ms  DeleteObjects: 2.987801 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.345315 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 525.
+Total: 1.328069 ms (FindLiveObjects: 0.019057 ms CreateObjectMapping: 0.013084 ms MarkObjects: 0.156728 ms  DeleteObjects: 1.138914 ms)
+
+You have clicked the button!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
